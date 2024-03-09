@@ -1,0 +1,78 @@
+.VoirClasseContainer {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+
+  .VoirClasseContainer-blockChoix {
+    display: grid;
+
+    & > :nth-child(2) {
+      max-height: 180px;
+      overflow-y: hidden;
+      overflow-y: scroll;
+      background-color: rgba(97, 97, 97, 0.041);
+
+      .VoirClasseContainer-linkClasse{
+        display: grid;
+        text-decoration: none;
+        color: black;
+        padding: 5px 10px;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.185);
+          font-weight: bold;
+        }
+      }
+      .active {
+        background-color: rgba(0, 0, 0, 0.185);
+        font-weight: bold;
+      }
+    
+
+      &::-webkit-scrollbar {
+        width: 5px;
+        border-radius: 8px;
+        background-color: rgba(97, 97, 97, 0.041);
+      }
+      &::-webkit-scrollbar-thumb{
+        border-radius: 8px;
+        background-color: rgba(97, 97, 97, 0.425)
+      }
+
+    }
+    & > :nth-child(3) {
+      margin-top: 20px;
+    }
+    & > :nth-child(4) {
+      display: grid;
+      background-color: rgba(97, 97, 97, 0.041);
+      
+
+      .VoirClasseContainer-linkOptions {
+        text-decoration: none;
+        color: black;
+        padding: 5px 10px;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.185);
+          font-weight: bold;
+        }
+      }
+
+      .active {
+        background-color: rgba(0, 0, 0, 0.185);
+        font-weight: bold;
+      }
+    }
+  }
+
+  .VoirClasseContainer-details{
+    padding: 0 10px;
+
+    &>:nth-child(1){
+
+      &>:nth-child(1){
+        font-weight: bold;
+      }
+    }
+  }
+}

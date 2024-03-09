@@ -1,0 +1,32 @@
+.liensTextContainer {
+  display: flex;
+  gap: 15px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.705);
+  padding: 5px 10px;
+  font-size: 1.2em;
+  border-radius: 7px;
+  transition: all ease 0.2s;
+
+  & > :nth-child(1) {
+    display: flex;
+    align-items: center;
+  }
+  & > :nth-child(2) {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+  }
+
+  &:hover {
+    background-color: #ffffff11;
+  }
+}
+.active {
+  background-color: #ffffff11;
+  color: white;
+}
+
+.gris {
+  color: rgba(0, 0, 0, 0.507);
+}

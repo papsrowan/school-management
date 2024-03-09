@@ -1,0 +1,23 @@
+.EtatClasseComponent{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-bottom: 1px solid rgba(145, 145, 145, 0.507);
+    padding: 10px 10px;
+    transition: all ease 0.2s;
+    cursor: pointer;
+
+    &:hover{
+        font-weight: bold;
+        padding-left: 15px;
+        background-color: rgba(131, 131, 131, 0.123);
+    }
+
+    .EtatClasseComponent-action{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.link{
+    color: black;
+    text-decoration: none;
+}

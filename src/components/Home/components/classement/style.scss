@@ -1,0 +1,31 @@
+.rangClasseContainer{
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 1fr;
+    flex-flow: row;
+    gap: 15px;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 1px solid rgba(145, 145, 145, 0.507);
+
+    &:hover{
+        font-weight: bold;
+        background-color: rgba(145, 145, 145, 0.158);
+    }
+    &>:nth-child(1){
+        display: flex;
+        align-items: center;
+    }
+
+    
+}
+
+
+.Down{
+    color: red;
+}
+.Up{
+    color: green;
+}

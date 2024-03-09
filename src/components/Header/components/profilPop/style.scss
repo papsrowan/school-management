@@ -1,0 +1,25 @@
+.profilePupContainer {
+  display: grid;
+  background-color: white;
+  border-radius: 7px 0 7px 7px;
+  box-shadow: 0 0 3px 2px rgba(173, 173, 173, 0.363);
+  transition: all ease-in-out 0.5s;
+
+  .liensTextContainer{
+    border-radius: 0;
+
+    &:hover{
+      background-color: rgba(173, 173, 173, 0.363);
+      color: rgba(0, 0, 0, 0.589);
+    }
+  }
+}
+
+.visible {
+  transform: translateY(10px);
+}
+.mask {
+  opacity: 0;
+  transform: translateX(150px);
+  
+}

@@ -1,0 +1,34 @@
+.elevesContainner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+
+  &>:nth-child(1){
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+  .elevesContainer-blockEleves {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+
+    & > :nth-child(1) {
+      .navLink {
+        text-decoration: none;
+        padding: 8px;
+        color: black;
+      }
+      .active {
+        border-bottom: 3px solid rgb(0, 73, 95);
+        font-weight: bold;
+        color: rgb(0, 73, 95);
+        background-color: rgb(255, 255, 255);
+      }
+    }
+    .elevesContainer-blockDetails {
+      padding: 10px 0;
+      border-top: 1px solid rgba(0, 73, 95, 0.356);
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.container-classeTransition{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    &>:nth-child(1){
+        font-size: 15em;
+        color: #111827bb;
+    }
+    &>:nth-child(2){
+        font-size: 2em;
+        color: #111827bb;
+    }
+}

@@ -1,0 +1,108 @@
+.HomeContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+
+  &>:nth-child(1){
+    grid-column: 1/-1 ;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+  .HomeContainer-blockTotalStat {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    grid-column: 1/-1;
+
+    & > :nth-child(1) {
+      background-color: #00b7cf;
+      font-size: 1.8em;
+    }
+    & > :nth-child(2) {
+      background-color: #cf00ad;
+      font-size: 1.8em;
+    }
+    & > :nth-child(3) {
+      background-color: #00cf8a;
+      font-size: 1.8em;
+    }
+  }
+
+  .HomeContainer-classeClassement {
+    color: black;
+    display: grid;
+
+    & > :nth-child(2) {
+      background-color: rgba(131, 131, 131, 0.123);
+      border-radius: 8px;
+      padding: 0 0 10px 0;
+
+      & > :nth-child(2) {
+        & > :nth-child(1) {
+          color: rgb(0, 167, 69);
+          font-weight: bold;
+        }
+      }
+      & > :nth-child(3) {
+        & > :nth-child(1) {
+          color: rgb(0, 167, 69);
+          font-weight: bold;
+        }
+      }
+      & > :nth-child(4) {
+        & > :nth-child(1) {
+          color: rgb(0, 167, 69);
+          font-weight: bold;
+        }
+      }
+
+      .headerTitleClassement {
+        display: grid;
+        padding: 10px 10px 0 10px;
+        font-weight: bold;
+        grid-template-columns: 100px 1fr 1fr 1fr;
+      }
+    }
+  }
+
+  // .HomeContainer-graphe {
+  // }
+
+  .HomeContainer-etatClasse {
+    grid-column: 1/-1;
+    display: grid;
+    gap: 10px;
+
+    .headerTitleEtablissement {
+      display: grid;
+      font-weight: bold;
+      grid-template-columns: repeat(5, 1fr);
+      background-color: rgba(145, 145, 145, 0.507);
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      padding: 0 10px;
+    }
+
+    & > :nth-child(3) {
+      background-image: linear-gradient(360deg, #111e2770, rgb(255, 255, 255));
+      overflow-y: auto;
+      max-height: 450px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+
+      &::-webkit-scrollbar {
+        background-color: #5d6c7057;
+        width: 8px;
+        border-radius: 8px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #282c347c;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+

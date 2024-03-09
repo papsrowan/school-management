@@ -1,0 +1,24 @@
+.NavBarContainer{
+    grid-row: 1/-1;
+    background-color: #111827;
+    color: white;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 80px 1fr auto;
+    color: rgba(255, 255, 255, 0.705) !important;
+
+    &>:nth-child(1){
+        margin-left: 13px;
+    }
+
+    &>:nth-child(2){
+        display: grid;
+        height: fit-content;
+        gap: 10px;
+    }
+
+    .NavBarContainer-setting{
+        background-color: none;
+    }
+
+}

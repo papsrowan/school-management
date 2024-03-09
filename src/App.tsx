@@ -1,0 +1,33 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import "../src/App.css";
+import Bulletins from "./components/Bulletins/Bulletins";
+import Classes from "./components/Classes/Classes";
+import Enseignants from "./components/Enseignants/Enseignants";
+import Etudiants from "./components/Etudiants/Etudiants";
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import NavBar from "./components/NavBar/NavBar";
+import Profile from "./components/Profile/Profile";
+
+export function App() {
+  return (
+    <Router>
+      <div className="global-container">
+        <NavBar />
+        <Header />
+        <div className="blockPages">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/classes/*" element={<Classes />} />
+            <Route path="/eleves/*" element={<Etudiants />} />
+            <Route path="/bulletins" element={<Bulletins />} />
+            <Route path="/enseignants" element={<Enseignants />} />
+            <Route path="/profil/*" element={<Profile />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
+  );
+}
+
+export default App;

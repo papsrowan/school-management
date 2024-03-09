@@ -1,0 +1,36 @@
+.headerContainer {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(148, 148, 148, 0.247);
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: end;
+  align-items: center;
+  gap: 15px;
+  padding: 0 20px;
+
+  & > :nth-child(1) {
+    font-size: 1.5em;
+  }
+  & > :nth-child(2) {
+    border: 1px solid rgba(148, 148, 148, 0.63);
+    height: 25px;
+  }
+  & > :nth-child(3) {
+    height: 30px;
+    border-radius: 10px;
+  }
+  & > :nth-child(4) {
+    font-weight: bold;
+  }
+  & > :nth-child(5) {
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+
+    &>:nth-child(2){
+        position: absolute;
+        right: 5px;
+        top: 28px;
+    }
+  }
+}
