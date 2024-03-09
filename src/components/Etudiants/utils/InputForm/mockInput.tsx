@@ -11,4 +11,10 @@ export const mockInputForm: TMockInput = [
   {icon: <MdOutlineDashboard />, inputType: "text", label: "shcool"},
   {icon: <MdOutlineDashboard />, inputType: "text", label: "shcool"},
   {icon: <MdOutlineDashboard />, inputType: "text", label: "shcool"},
+  {option:[{option:"texte"}],inputType: "select", label: "shcool"},
+  {option:[{option:"texte"}],inputType: "select", label: "shcool"},
+  {option:[{option:"texte"}],inputType: "select", label: "shcool"},
+  {option:[{option:"texte"}],inputType: "select", label: "shcool"},
+  {option:[{option:"texte"}],inputType: "select", label: "shcool"},
+
 ];

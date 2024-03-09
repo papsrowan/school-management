@@ -6,11 +6,25 @@ import InputForm from "../../components/InputForm/InputForm";
 
 const AjouterEleve = () => {
   return (
-    <div className="containerAjouterEleve">
+    <form className="containerAjouterEleve">
       {mockInputForm.map((el, idx) => (
         <InputForm key={idx} {...el} />
       ))}
-    </div>
+      <div>
+          <label>Genre</label>
+          <div>
+            Femme<input name="genre" type="radio"/>{" "}
+            Home<input name="genre" type="radio"/>{" "}
+          </div>
+        </div>
+      <div>
+          <label>Profile photo</label>
+          <div>
+            <input type="file"/>{" "}
+          </div>
+        </div>
+      <button type="submit">Ajouter</button>
+    </form>
   );
 };
 
