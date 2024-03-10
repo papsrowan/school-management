@@ -1,0 +1,24 @@
+.eleveLink{
+    text-decoration: none;
+    color: black;
+    tr{
+        transition: all ease 0.3s;
+
+        &:hover{
+            background-color: rgba(196, 196, 196, 0.452);
+        }
+    }
+    .eleveLink-photo{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    }
+    select{
+        outline: none;
+        background-color: #111827;
+        border: none;
+        color: white;
+        border-radius: 2px;
+    }
+}

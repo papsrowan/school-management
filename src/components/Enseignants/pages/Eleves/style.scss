@@ -1,0 +1,61 @@
+.elevesContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  & > :nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+  }
+  & > :nth-child(2) {
+    display: grid;
+    row-gap: 10px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.082);
+    border-radius: 8px;
+    padding: 10px;
+    .elevesContainer-nombreEleveContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      select {
+        outline: none;
+      }
+
+      & > :nth-child(2) {
+        justify-self: end;
+        input {
+          outline: none;
+        }
+      }
+    }
+
+    tbody {
+        background-color: rgba(233, 233, 233, 0.568);
+      tr {
+        display: grid;
+        grid-template-columns: 0.8fr 1.7fr 3fr 1.3fr 1fr 2.9fr 1.3fr 1.5fr;
+        padding: 8px 0;
+      }
+      .elevesContainer-containerListe{
+        max-height: 310px;
+        overflow: hidden;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar{
+            background-color: #5d6c7057;
+            width: 7px;
+            border-radius: 8px;
+          }
+          
+          &::-webkit-scrollbar-thumb{
+            background-color: #282c347c;
+            border-radius: 8px;
+          }
+      }
+      & > :nth-child(1) {
+        font-weight: bold;
+        border-bottom: 1px solid rgb(153, 153, 153);
+        background-color: rgb(255, 255, 255);
+      }
+    }
+  }
+}
