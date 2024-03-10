@@ -24,7 +24,7 @@ export function App() {
             <Route path="/bulletins" element={<Bulletins />} />
             <Route path="/enseignants" element={<Enseigne />} />
             <Route path="/profil/*" element={<Profile />} />
-            <Route path="/details/:id" element={<Details />} />
+            <Route path="/details/:id/*" element={<Details />} />
           </Routes>
         </div>
       </div>
