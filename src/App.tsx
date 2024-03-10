@@ -8,6 +8,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import NavBar from "./components/NavBar/NavBar";
 import Profile from "./components/Profile/Profile";
+import Details from "./components/Details/Details";
 
 export function App() {
   return (
@@ -23,6 +24,7 @@ export function App() {
             <Route path="/bulletins" element={<Bulletins />} />
             <Route path="/enseignants" element={<Enseigne />} />
             <Route path="/profil/*" element={<Profile />} />
+            <Route path="/details/:id" element={<Details />} />
           </Routes>
         </div>
       </div>

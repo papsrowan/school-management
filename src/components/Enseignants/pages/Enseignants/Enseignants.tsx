@@ -73,6 +73,7 @@ const Enseignants = () => {
                 redouble={el.redouble}
                 genre={el.genre}
                 adresse={el.adresse}
+                id={idx}
               />
             ))}
             </div>
