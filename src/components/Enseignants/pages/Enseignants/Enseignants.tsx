@@ -1,30 +1,28 @@
-import React from "react";
-import FiltreEleves from "../../components/FiltreEleves/FiltreEleves";
 import { FaPeopleRoof } from "react-icons/fa6";
-import "./style.scss";
-import { listeClasse } from "../../../Classes/Pages/VoirClasse/pages/ClasseTransition/ClasseTransition";
-import { tableSession } from "../../utils/filtre/mockSession";
-import DetailsEleve from "../../components/DetailsEleve/DetailsEleve";
-import { mockDetailsEleve } from "../../utils/detailsEleve/mockDetailsEleve";
+import DetailsEnseignants from "../../components/DetailsEnseignants/DetailsEnseignants";
+import FiltreEnseignants from "../../components/FiltreEnseignants/FiltreEnseignants";
+import { mockDetailsEnseignants } from "../../utils/DetailsEnseignants/mockDetailsEnseignants";
+import "./styles.scss";
 
 const Enseignants = () => {
   return (
     <div className="elevesContainer">
       <div>
-        <FiltreEleves                 
-          filter={tableSession}
+        
+        <FiltreEnseignants
+          filter={"19"}
           icon={<FaPeopleRoof />}
-          tilte="Running Session"
+          tilte="HOMME"
         />
-        <FiltreEleves
-          filter={listeClasse}
+        <FiltreEnseignants
+          filter={"19"}
           icon={<FaPeopleRoof />}
-          tilte="Select Class"
+          tilte="FEMME"
         />
       </div>
 
       <div>
-        <h3>Liste des Enseignants</h3>
+        <h3>List des Enseignants</h3>
         <div className="elevesContainer-nombreEleveContainer">
           <div>
             Voir{" "}
@@ -43,7 +41,7 @@ const Enseignants = () => {
                 30
               </option>
             </select>{" "}
-            Enseignant
+            Enseignants
           </div>
           <div>
             <label>Recherche:</label> <input type="text" name="seach" />
@@ -64,8 +62,8 @@ const Enseignants = () => {
               <td>Option</td>
             </tr>
             <div className="elevesContainer-containerListe">
-            {mockDetailsEleve.map((el, idx) => (
-              <DetailsEleve
+            {mockDetailsEnseignants.map((el, idx) => (
+              <DetailsEnseignants
                 key={idx}
                 photo={el.photo}
                 nom={el.nom}

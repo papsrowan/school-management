@@ -1,10 +1,10 @@
 import React from "react";
-import "./style.scss";
+import "./styles.scss";
 
-import { mockInputForm } from "../../utils/InputForm/mockInput";
 import InputForm from "../../components/InputForm/InputForm";
+import { mockInputForm } from "../../utils/inputForm/mockInput";
 
-const AjouterEleve = () => {
+const AjouterEnseignants = () => {
   return (
     <form className="containerAjouterEleve">
       {mockInputForm.map((el, idx) => (
@@ -28,4 +28,4 @@ const AjouterEleve = () => {
   );
 };
 
-export default AjouterEleve;
+export default AjouterEnseignants;

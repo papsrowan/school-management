@@ -7,7 +7,7 @@ type Tfilter = {
   filter: string | string[];
 };
 
-const FiltreEleves = (data: Tfilter) => {
+const FiltreEnseignants = (data: Tfilter) => {
   return (
     <div className="filtreElevesContainer">
       <div>{data.icon}</div>
@@ -29,4 +29,4 @@ const FiltreEleves = (data: Tfilter) => {
   );
 };
 
-export default FiltreEleves;
+export default FiltreEnseignants;

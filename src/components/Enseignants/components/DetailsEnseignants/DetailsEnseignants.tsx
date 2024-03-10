@@ -12,7 +12,7 @@ type TEleve = {
   adresse: string;
   genre: string;
 };
-const DetailsEleve = (eleveDetails: TEleve) => {
+const DetailsEnseignants = (eleveDetails: TEleve) => {
   return (
     <Link to={``} className="eleveLink">
     <tr>
@@ -36,4 +36,4 @@ const DetailsEleve = (eleveDetails: TEleve) => {
   );
 };
 
-export default DetailsEleve;
+export default DetailsEnseignants;

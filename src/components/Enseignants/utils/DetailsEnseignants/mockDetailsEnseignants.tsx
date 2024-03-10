@@ -11,7 +11,7 @@ type TEleve = {
   adresse: string;
   genre: string;
 }[];
-const mockDetailsEleve: TEleve = [
+const mockDetailsEnseignants: TEleve = [
   {
     photo: <CiUser />,
     nom: " yann rowan",
@@ -164,5 +164,5 @@ const mockDetailsEleve: TEleve = [
   },
 ];
 
-export { mockDetailsEleve };
+export { mockDetailsEnseignants };
 
