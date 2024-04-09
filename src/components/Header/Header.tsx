@@ -6,14 +6,19 @@ import ProfilePup from "./components/profilPop/ProfilePup";
 
 const Header = () => {
   const [setshowPop, setSetshowPop] = useState(false);
-
+  const [notifNbre, setNotifNombre] = useState<number>(1);
   const handleClick = () => {
     setSetshowPop((prev) => !prev);
   };
   return (
     <>
       <div className="headerContainer">
-        <IoIosNotificationsOutline />
+        <div>
+          <IoIosNotificationsOutline />
+          {notifNbre >= 1 ? (
+            <span className="headerContainer-nbre-notif">{notifNbre}</span>
+          ) : ""}
+        </div>
         <div></div>
         <img src="./profil.png" alt="" />
         <span>Yann Rowan</span>

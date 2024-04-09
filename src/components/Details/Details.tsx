@@ -1,4 +1,4 @@
-import { Link, Route, Routes, useParams } from "react-router-dom";
+import { NavLink, Route, Routes, useParams } from "react-router-dom";
 import DetailsChangePasseWord from "./components/DetailsChangePasseWord/DetailsChangePasseWord";
 import DetailsHome from "./components/DetailsHome.tsx/DetailsHome";
 import DetailsInformation from "./components/DetailsInformation/DetailsInformation";
@@ -21,25 +21,25 @@ const Details = () => {
           <span>Teacher</span>
         </div>
         <div className="Details-container-info">
-          <span>Email</span>
+          <span>Email :</span>
           <span>papsrowan@gmail.com</span>
         </div>
         <div className="Details-container-info">
-          <span>Contact</span>
+          <span>Contact :</span>
           <span>(+237) 657 841 880</span>
         </div>
         <div className="Details-container-info">
-        <span>DOD</span>
+        <span>DOD :</span>
         <span>7757698798GHG</span>
         </div>
         <button>Suspend</button>
       </div>
       <div>
         <div className="Details-container-header">
-          <Link to={`home`}className="link">Home</Link>
-          <Link to={`information`}className="link">Information</Link>
-          <Link to={`passeword`}className="link">Passeword</Link>
-          <Link to={`setting`}className="link">Setting</Link>
+          <NavLink to={`home`}className="link">Home</NavLink>
+          <NavLink to={`information`}className="link">Information</NavLink>
+          <NavLink to={`passeword`}className="link">Passeword</NavLink>
+          <NavLink to={`setting`}className="link">Setting</NavLink>
         </div>
         <div>
           <Routes>

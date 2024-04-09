@@ -22,6 +22,9 @@
         object-fit: cover;
         overflow: hidden;
       }
+      & > :nth-child(2) {
+        font-weight: bold;
+      }
       img {
         width: 100%;
         height: auto;
@@ -34,6 +37,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+    & > :nth-child(1) {
+      font-weight: bold;
+    }
     & > :nth-child(2) {
       justify-self: end;
     }
@@ -56,10 +62,18 @@
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    .active{
+      border-top: 2px solid rgb(0, 119, 255);
+    }
     .link {
       text-decoration: none;
       color: black;
     }
   }
+
+  // &>:nth-child(2){
+    
+  // }
 }
 }

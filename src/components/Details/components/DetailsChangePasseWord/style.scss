@@ -1,0 +1,29 @@
+.DetailPassWord-container {
+    background-color: white;
+    padding: 10px;
+    display: grid;
+    padding: 0 10px 10px 10px;
+  
+    &>:nth-child(1){
+      background-color: rgb(216, 213, 213);
+      padding: 10px;
+      display: grid;
+      gap: 20px;;
+    }
+  
+    .DetailPassWord-containe-info {
+      display: grid;
+      grid-template-columns:  1fr 1fr;
+      gap: 20px;
+        
+      &>:nth-child(1){
+        font-weight: bold;
+      }
+      &>:nth-child(2){
+        outline: none;
+        background-color: rgb(219, 219, 219);
+        border: none;
+      }
+    }
+  
+  }
